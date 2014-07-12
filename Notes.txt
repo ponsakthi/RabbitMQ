@@ -1,0 +1,57 @@
+Rabbit MQ:
+
+Status:
+	Navigating to bin directory and 
+		C:\Program Files\RabbitMQ Server\rabbitmq_server-3.3.4\sbin>rabbitmqctl status -> will give status
+
+Enabling management plugin:
+	rabbitmq-plugins enable rabbitmq_management
+	
+Stopping and Starting the service:
+	rabbitmqctl stop ->stops the service.
+	rabbitmq-service start->Starts the serive
+
+Accessing via Browser:
+	http://localhost:15672/
+	Username and password are guest by default
+
+Working in visual studio:
+	Via nuget install RabbitMq.Client
+
+Creating Queues via Web console:
+	Login->Exchanges->Add a new exchange:
+		Name: Myexchange:
+		Type : fanout
+		
+	Add Queue:
+		Q tab->new Q
+	Binding Queue to Exchange:
+		In Q tab, go to binding add binding and bind to the exchange created earlier
+	
+	Sample message :
+		go to exxhange tab and publish a msg . It will appear in Qs tab
+	
+	C# Sample:
+		Refer to C# Into project which will create the Exchange,Q and bind Q to exchange
+	
+	RouteKey:
+		You can specify a binding between Q and exchange via a aroute key.
+		Only when the exchange publishes the message with route key mentioned during binding, the appropriate Q will recieve the message
+		
+Powershell Deploy:
+		To enable scripts to run on machine.
+		set-executionpolicy remotesigned
+
+Q persistance:
+		In Mesage Publisher project, we have set 
+				var properties = model.CreateBasicProperties();
+				properties.SetPersistent(false);
+		Which means , that messages are deleted on server restart.
+		
+		To Set the Q as durable,
+			In powershell script
+				@model.queuedeclare("qname",$true ->has to be set
+		
+		To Set the messages as durable,
+				and setpersistent(true) in C# code in Message publisher project
+	
