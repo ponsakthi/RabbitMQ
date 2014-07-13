@@ -54,4 +54,10 @@ Q persistance:
 		
 		To Set the messages as durable,
 				and setpersistent(true) in C# code in Message publisher project
-	
+
+Competing Consumer:
+		Use one sender and two recievers and then you will be seeing the competing consumer issue
+		
+Publisher Subscribe pattern:
+		Here a message is sent to exchange where  multiple queues are bound to it. The exchange places the copy of the message in
+		all the queues, and hence the listeners of the Q will get the message.
