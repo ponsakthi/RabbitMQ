@@ -16,6 +16,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScript
 		StopServer.bat = StopServer.bat
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SenderAndRecieverBasic", "SenderAndRecieverBasic", "{B7E28B35-415F-40CB-93E8-8E04DA45473A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{2E89590C-9FD3-425C-B663-504A4DC9AE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reciever", "Reciever\Reciever.csproj", "{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,8 +36,20 @@ Global
 		{22FE3C86-A20C-45FF-81D2-C6C1582A1F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22FE3C86-A20C-45FF-81D2-C6C1582A1F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22FE3C86-A20C-45FF-81D2-C6C1582A1F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E89590C-9FD3-425C-B663-504A4DC9AE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E89590C-9FD3-425C-B663-504A4DC9AE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E89590C-9FD3-425C-B663-504A4DC9AE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E89590C-9FD3-425C-B663-504A4DC9AE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E89590C-9FD3-425C-B663-504A4DC9AE17} = {B7E28B35-415F-40CB-93E8-8E04DA45473A}
+		{0BEDE6CD-96B1-4E61-BD3D-01303F9C7859} = {B7E28B35-415F-40CB-93E8-8E04DA45473A}
 	EndGlobalSection
 EndGlobal

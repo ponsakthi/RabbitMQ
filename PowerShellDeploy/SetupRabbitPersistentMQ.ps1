@@ -37,7 +37,7 @@ Write-Host "Setting up Model"
 $model = $connection.CreateModel()
 
 Write-Host "Creating Queue"
-$model.QueueDeclare("SampleQueue",$true,$false,$false,$null)
+$model.QueueDeclare("SendAndRecieve",$true,$false,$false,$null)
 
 Write-Host "Setup Complete"
 
