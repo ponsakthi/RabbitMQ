@@ -37,6 +37,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScript
 		SetupRabbitMQExchangeAndQueue.ps1 = SetupRabbitMQExchangeAndQueue.ps1
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RPC", "RPC", "{52FFF4ED-D30D-4A30-BE83-6D653ED5B434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScript", "BuildScript", "{B6E721CE-5863-4FAC-8FB6-49552E17CB11}"
+	ProjectSection(SolutionItems) = preProject
+		..\PowerShellDeploy\RabbitMQ.Client.dll = ..\PowerShellDeploy\RabbitMQ.Client.dll
+		SetupQ.bat = SetupQ.bat
+		SetupQ.ps1 = SetupQ.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenderRPC", "SenderRPC\SenderRPC.csproj", "{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecieverRPC", "RecieverRPC\RecieverRPC.csproj", "{26A1AD70-8DF0-492F-923F-41F7285801D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +84,14 @@ Global
 		{08A477DF-A11B-48CA-8B5E-0CC84FD80117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08A477DF-A11B-48CA-8B5E-0CC84FD80117}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08A477DF-A11B-48CA-8B5E-0CC84FD80117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A1AD70-8DF0-492F-923F-41F7285801D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A1AD70-8DF0-492F-923F-41F7285801D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A1AD70-8DF0-492F-923F-41F7285801D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A1AD70-8DF0-492F-923F-41F7285801D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +103,8 @@ Global
 		{017D87BF-2BCF-42B2-89D1-F8A8A6F8551D} = {3D6A15DD-6655-4B2E-9E35-F59BE0C867A6}
 		{08A477DF-A11B-48CA-8B5E-0CC84FD80117} = {3D6A15DD-6655-4B2E-9E35-F59BE0C867A6}
 		{E448BE7F-0339-4E20-B6DA-1AE771D173A1} = {3D6A15DD-6655-4B2E-9E35-F59BE0C867A6}
+		{B6E721CE-5863-4FAC-8FB6-49552E17CB11} = {52FFF4ED-D30D-4A30-BE83-6D653ED5B434}
+		{5A61E8FE-C711-4E6C-AE3D-BB461D06B75A} = {52FFF4ED-D30D-4A30-BE83-6D653ED5B434}
+		{26A1AD70-8DF0-492F-923F-41F7285801D8} = {52FFF4ED-D30D-4A30-BE83-6D653ED5B434}
 	EndGlobalSection
 EndGlobal
